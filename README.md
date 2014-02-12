@@ -9,5 +9,9 @@ Installation
 
 Clone the repo and then run the following commands.
 
+```
 > npm install
 > gulp
+```
+
+The gulpfile also uses live reload, so having the browser extension is highly recommended.
