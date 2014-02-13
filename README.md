@@ -36,3 +36,5 @@ Notes
 ====================
 
 Angular + Firebase tutorial: https://www.firebase.com/quickstart/angularjs.html
+
+When creating your Firebase account, you MUST use an email address and password. Do not use your Github credentials, or you'll need to create a new account when deploying.
