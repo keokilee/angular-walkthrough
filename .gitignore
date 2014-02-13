@@ -1,4 +1,3 @@
-build/
 node_modules/
 *.log
 notes.txt
