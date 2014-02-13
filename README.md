@@ -3,15 +3,36 @@ angular-walkthrough
 
 Simple Angular starter app for an Ohana.js walkthrough.
 
-
-Installation
+Basic Requirements
 ===================
 
-Clone the repo and then run the following commands.
+* Node.js
+* Git
+
+Running the project
+===================
+
+Clone this project and run the following commands.
 
 ```
+> npm install express
+> npm start
+```
+
+Advanced
+===================
+
+The project comes with tasks that will watch the js files in app. When they change, the files will be copied to build/ automatically. If you have the Livereload browser extension, this task will also reload the page in your browser.
+
+To run the task:
+
+```
+> npm -g install gulp
 > npm install
 > gulp
 ```
 
-The gulpfile also uses live reload, so having the browser extension is highly recommended.
+Notes
+====================
+
+Angular + Firebase tutorial: https://www.firebase.com/quickstart/angularjs.html

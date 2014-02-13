@@ -3,19 +3,12 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var livereload = require('gulp-livereload');
-var express = require('express');
-var path = require('path');
-
-var createServer = function(port) {
-  var app = express();
-  app.use(express['static'](path.resolve('./build')));
-  app.listen(port, function() {
-    gutil.log('Listening on', port);
-  });
-};
+var server = require('./server');
 
 gulp.task('dev-server', function() {
-  createServer(3000);
+  server.createServer(3000, function() {
+    gutil.log('Listening on', 3000);
+  });
 });
 
 gulp.task('public', function() {
@@ -35,9 +28,8 @@ gulp.task('templates', function() {
       .pipe(livereload());
 });
 
-gulp.task('default', function() {
-  gulp.run('dev-server', 'js', 'templates', 'public');
-
+gulp.task('watch', function() {
   gulp.watch('app/**', ['templates', 'js']);
 });
 
+gulp.task('default', ['dev-server', 'js', 'templates', 'public', 'watch']);
