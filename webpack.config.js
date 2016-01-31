@@ -3,11 +3,15 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
   context: process.cwd(),
   debug: true,
   devtool: 'eval-source-map',
+  devServer: {
+    port: 3100
+  },
   entry: {
     angular2: [
       'rxjs',
@@ -39,8 +43,14 @@ module.exports = {
     new HtmlWebpackPlugin({ title: 'Guest Book' }),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: 'development'
+        NODE_ENV: JSON.stringify('development')
       }
+    }),
+    new BrowserSyncPlugin({
+      host: '0.0.0.0',
+      proxy: 'http://localhost:3100'
+    }, {
+      reload: false
     })
   ],
   resolve: {

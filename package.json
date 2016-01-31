@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf build && webpack --progress --profile --colors --display-error-details --display-cached",
-    "start": "rimraf build && webpack-dev-server --progress --profile --colors --display-error-details",
+    "start": "rimraf build && webpack-dev-server --inline --progress --profile --colors --display-error-details",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,6 +29,8 @@
     "zone.js": "^0.5.10"
   },
   "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "browser-sync-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.7.2",
     "rimraf": "^2.5.1",
     "ts-loader": "^0.8.0",
