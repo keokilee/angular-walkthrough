@@ -5,10 +5,12 @@
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
-    "noEmit": true
+    "sourceMap": true
   },
   "files": [
-    "src/app.ts"
-  ]
+    "src/main.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": { "rewriteTsconfig": false }
 }

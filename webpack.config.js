@@ -16,7 +16,7 @@ module.exports = {
       'angular2/router',
       'angular2/http',
     ],
-    app: './src/app'
+    main: './src/main'
   },
   module: {
     loaders: [
@@ -36,7 +36,7 @@ module.exports = {
     chunkFilename: '[id].chunk.js'
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: 'Fluidity Generator' }),
+    new HtmlWebpackPlugin({ title: 'Guest Book' }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: 'development'
