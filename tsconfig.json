@@ -8,7 +8,9 @@
     "sourceMap": true
   },
   "files": [
-    "src/main.ts"
+    "typings/main.d.ts",
+    "src/main.ts",
+    "src/server.ts"
   ],
   "compileOnSave": false,
   "buildOnSave": false,

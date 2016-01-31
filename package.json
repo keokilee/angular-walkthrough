@@ -4,8 +4,8 @@
   "description": "Angular 2 walkthrough for Ohana.js",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf build && webpack --progress --profile --colors --display-error-details --display-cached",
-    "start": "rimraf build && webpack-dev-server --inline --progress --profile --colors --display-error-details",
+    "build": "rimraf build && webpack --progress --profile --colors --display-error-details --display-cached --config config/webpack.development.js",
+    "start": "rimraf build && webpack-dev-server --inline --progress --profile --colors --display-error-details --config config/webpack.development.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,7 +23,12 @@
   "homepage": "https://github.com/keokilee/angular-walkthrough#readme",
   "dependencies": {
     "angular2": "^2.0.0-beta.2",
+    "angular2-universal-preview": "^0.42.0",
+    "css": "^2.2.1",
     "es6-shim": "^0.33.3",
+    "express": "^4.13.4",
+    "parse5": "^2.1.5",
+    "preboot": "^1.1.0",
     "reflect-metadata": "^0.1.2",
     "rxjs": "^5.0.0-beta.0",
     "zone.js": "^0.5.10"

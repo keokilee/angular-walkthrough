@@ -55,5 +55,6 @@ module.exports = {
   ],
   resolve: {
     extensions: ['', '.ts', '.js', '.json', '.css', '.html']
-  }
+  },
+  target: 'web'
 }
