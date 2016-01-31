@@ -1,0 +1,41 @@
+{
+  "name": "angular-walkthrough",
+  "version": "1.0.0",
+  "description": "Angular 2 walkthrough for Ohana.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf build && webpack --progress --profile --colors --display-error-details --display-cached",
+    "start": "rimraf build && webpack-dev-server --progress --profile --colors --display-error-details",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keokilee/angular-walkthrough.git"
+  },
+  "keywords": [
+    "Angular"
+  ],
+  "author": "George Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keokilee/angular-walkthrough/issues"
+  },
+  "homepage": "https://github.com/keokilee/angular-walkthrough#readme",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.2",
+    "es6-shim": "^0.33.3",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.0",
+    "zone.js": "^0.5.10"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.7.2",
+    "rimraf": "^2.5.1",
+    "ts-loader": "^0.8.0",
+    "tslint": "^3.3.0",
+    "tslint-loader": "^2.1.0",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
