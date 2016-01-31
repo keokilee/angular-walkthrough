@@ -14,11 +14,4 @@ import { Guest } from '../models/guest'
   directives: [ GuestBookForm ]
 })
 export class App {
-  public guest: Guest
-  public guests: Guest[]
-
-  constructor() {
-    this.guest = { name: '', date: new Date() }
-    this.guests = []
-  }
 }

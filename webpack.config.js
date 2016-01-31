@@ -20,6 +20,7 @@ module.exports = {
       'angular2/router',
       'angular2/http',
     ],
+    polyfills: 'angular2/bundles/angular2-polyfills',
     main: './src/main'
   },
   module: {
