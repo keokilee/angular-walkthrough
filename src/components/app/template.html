@@ -1,0 +1,8 @@
+
+<div>
+  <h1>Guest Book</h1>
+  <guest-book-form (added)="addGuest($event)"></guest-book-form>
+  <ul>
+    <li *ngFor="#guest of guests">{{ guest.name }}</li>
+  </ul>
+</div>

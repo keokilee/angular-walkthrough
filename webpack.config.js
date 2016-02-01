@@ -29,6 +29,9 @@ module.exports = {
         test: /\.ts$/,
         loaders: ['ts', 'tslint'],
         exclude: /node_modules/
+      }, {
+        test: /\.html$/,
+        loader: 'raw'
       }
     ],
     noParse: [ /angular2\/bundles\//]

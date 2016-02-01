@@ -1,0 +1,6 @@
+<form (ngSubmit)="submit(guest)" #guestForm="ngForm">
+  <input [(ngModel)]="guest.name" placeholder="name" #name="ngForm" required />
+  <button>Add Guest</button>
+
+  <div [hidden]="name.valid">Name is required</div>
+</form>
